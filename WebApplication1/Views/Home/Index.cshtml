@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model WebApplication1.Models.ErrorViewModel
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+	    <title>Trang Chu</title>
+	    <link href="~/css/site.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="top">
+            Xin Chao Cac Ban!!!
+        </div>
+        <div class="row" style="padding:50px">
+        @{
+            string text = ViewBag.text;
+        }
+            @text
+            @ViewBag.text
+            @Model.RequestId
+        </div>
+    </body>
+</html>

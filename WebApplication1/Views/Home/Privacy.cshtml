@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>@ViewData["Title"]</h1>
+    <p>Use this page to detail your site's privacy policy.</p>
+    <div class="row" style="padding:50px">
+        @ViewBag.text
+        @TempData["Num"]
+    </div>
+</body>
+</html>
+
